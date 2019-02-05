@@ -1,3 +1,10 @@
+let userName = '';
+if (userName !== '') {
+  console.log(`Hello, ${userName}!`);
+} else {
+  console.log('Hello!');
+};
+
 const userQuestion = "Will I pass my Calculus exam, tomorrow?";
 let randomNumber = Math.floor(Math.random() * 8);
 let eightBall = '';
@@ -9,23 +16,23 @@ switch (randomNumber) {
     eightBall = 'It is decidedly so';
     break;
   case 2:
-    eightBall = 'Cannot predict now';
+    eightBall = 'Reply hazy try again';
     break;
   case 3:
-    eightBall = 'Don\'t count on it';
+    eightBall = 'Cannot predict now';
     break;
   case 4:
-    eightBall = 'My sources say no';
+    eightBall = 'Don\'t count on it';
     break;
   case 5:
-    eightBall = 'Outlook not so good';
+    eightBall = 'My sources say no';
     break;
   case 6:
-    eightBall = 'Signs point to yes';
+    eightBall = 'Outlook not so good';
     break;
   case 7:
-    eightBall = 'You are in grave danger';
+    eightBall = 'Signs point to yes';
     break;
 }
-console.log('The user asked: ' + userQuestion);
+console.log('The user has asked: ' + userQuestion);
 console.log('The eight ball answered: ' + eightBall);
